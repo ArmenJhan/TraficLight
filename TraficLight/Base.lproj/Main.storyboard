@@ -50,9 +50,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="START">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="vlY-m1-0vT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -65,6 +68,12 @@
                             <constraint firstItem="ghF-HF-EKw" firstAttribute="top" secondItem="2w5-s3-bKx" secondAttribute="bottom" constant="131" id="sq8-SS-hFu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenColorView" destination="f0O-Hl-MJh" id="MBw-iy-D8N"/>
+                        <outlet property="redColorView" destination="bC5-au-Xkm" id="mt0-aH-HbU"/>
+                        <outlet property="startButton" destination="ghF-HF-EKw" id="fFq-wm-Ctd"/>
+                        <outlet property="yellowCollrView" destination="GAm-68-c6O" id="KPZ-12-R72"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
