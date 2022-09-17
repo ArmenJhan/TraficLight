@@ -15,14 +15,15 @@ class ViewController: UIViewController {
     @IBOutlet var startButton: UIButton!
     
     var tapped = true
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        redColorView.layer.cornerRadius = 85
-        yellowCollrView.layer.cornerRadius = 85
-        greenColorView.layer.cornerRadius = 85
+    
+    
+    override func viewWillLayoutSubviews() {
+        redColorView.layer.cornerRadius = redColorView.frame.height / 2
+        yellowCollrView.layer.cornerRadius = yellowCollrView.frame.height / 2
+        greenColorView.layer.cornerRadius = greenColorView.frame.height / 2
         startButton.layer.cornerRadius = 15
     }
-    
+        
     @IBAction func startButtonTapped() {
         startButton.setTitle("NEXT", for: .normal)
        
@@ -39,9 +40,9 @@ class ViewController: UIViewController {
             greenColorView.alpha = 0.3
             redColorView.alpha = 1
         }
-        
     }
 }
+
 
 
 
